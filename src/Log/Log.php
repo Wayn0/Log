@@ -13,7 +13,7 @@
  * $log->log_debug('message');                  // logs debugging messages
  * $log->log_query('message');                  // logs queries
  *  
- * @package     Odin Framework
+ * @package     wayne-oliver/log
  * @author      Wayne Oliver <wayne@open-is.co.za>
  * @copyright   Wayne Oliver <wayne@open-is.co.za> 
  * @license     BSD
