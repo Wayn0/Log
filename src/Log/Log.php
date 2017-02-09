@@ -43,8 +43,6 @@ class Log
 	private $log_verbosity = self::INFO;
 	
 	private $ds = DIRECTORY_SEPARATOR;
-	
-	private $today = date("Y-m-d", time());
   
     
 	/**
@@ -55,6 +53,9 @@ class Log
 	**/    
 	public function __construct($log_dir='/tmp/', $log_level=self::INFO)
 	{
+		// Today's date
+		$today = date("Y-m-d", time());
+		
 		$log_directory = rtrim($log_dir, '\\/');
 		
 		// Set the full path to the log file
