@@ -40,10 +40,7 @@ class Log
 	**/
 	private $log_file      = 'logfile.log';
 	private $file_handle   = null;
-	private $log_verbosity = self::INFO;
-	
-	private $ds = DIRECTORY_SEPARATOR;
-  
+	private $log_verbosity = self::INFO; 
     
 	/**
 	* Class constructor
@@ -55,6 +52,7 @@ class Log
 	{
 		// Today's date
 		$today = date("Y-m-d", time());
+		$ds = DIRECTORY_SEPARATOR;
 		
 		$log_directory = rtrim($log_dir, '\\/');
 		
