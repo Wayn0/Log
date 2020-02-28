@@ -48,7 +48,7 @@ class Log
 	* @param integer $log_level One of the pre-defined log level constants
 	* @return void
 	**/    
-	public function __construct($log_dir='/tmp/', $log_level=self::INFO)
+	public function __construct($log_dir='/tmp/', $log_level=self::INFO, $prefix = "log")
 	{
 		// Today's date
 		$today = date("Y-m-d", time());
@@ -57,7 +57,7 @@ class Log
 		$log_directory = rtrim($log_dir, '\\/');
 		
 		// Set the full path to the log file
-		$this->log_file = $log_directory . $ds . "log_$today.log";
+		$this->log_file = $log_directory . $ds . "$prefix" . "_" ."$today.log";
 		
 		// Set log Verbosity
 		$this->log_verbosity = $log_level;
