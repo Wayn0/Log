@@ -20,7 +20,7 @@
  ********************************** 80 Columns *********************************
  **/
 
-namespace Log;
+namespace Wayn0;
 
 class Log 
 {
